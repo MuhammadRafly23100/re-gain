@@ -1,0 +1,328 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wdth,wght@12..96,75..100,400..800&family=Karla:wght@400;500;700&display=swap">
+  <style>
+    :root{
+      --paper:#FFFFFF; --sand:#F7F3EA;
+      --ink:#10241A; --ink-soft:#3C4A42; --muted:#6B776E;
+      --gold:#C5A880; --ember:#C48B50; --ember-text:#8A5A2D;
+      --forest:#0B1C15; --cream:#EDE6DA; --line:#E7E0D2;
+      --f-d:"Bricolage Grotesque","Helvetica Neue",Arial,sans-serif;
+      --f-b:"Karla","Segoe UI",system-ui,sans-serif;
+      --max:1180px; --pad:clamp(20px,4vw,56px);
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--paper);color:var(--ink-soft);font-family:var(--f-b);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+    h1,h2,h3,h4{font-family:var(--f-d);color:var(--ink);margin:0;font-weight:700;text-wrap:balance}
+    p{margin:0}
+    a{color:var(--ember-text);text-decoration:none}
+    a:hover{color:var(--ink)}
+    img{max-width:100%;display:block}
+    .wrap{max-width:var(--max);margin:0 auto;padding-inline:var(--pad)}
+    .num{font-family:var(--f-d);font-weight:800;font-stretch:72%;letter-spacing:-.01em;color:var(--ink);font-variant-numeric:tabular-nums}
+    .btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;padding:.95rem 1.7rem;border-radius:3px;font-weight:700;font-size:.92rem;font-family:var(--f-b);cursor:pointer;min-height:44px;border:none;text-decoration:none}
+    .btn-primary{background:var(--ember);color:var(--ink)}
+    .btn-primary:hover{background:#B87A3E}
+    .btn-line{background:transparent;color:var(--ink);border:1.5px solid var(--ink)}
+    .btn-line:hover{background:var(--ink);color:var(--cream)}
+    .btn-line-cream{background:transparent;color:var(--cream);border:1.5px solid var(--cream)}
+    section{padding-block:clamp(64px,9vw,108px)}
+    .label{font-size:.82rem;color:var(--muted);margin:0 0 1rem}
+
+    @media (max-width:760px){
+      .nav-links{display:none!important}
+      .hero-grid{grid-template-columns:1fr!important;align-items:start!important}
+      .hero-stat{border-left:none!important;border-top:2px solid var(--gold);padding-left:0!important;padding-top:1rem;margin-top:.4rem}
+      .split-wrap{grid-template-columns:1fr!important}
+      .split-left{border-right:none!important;border-bottom:1px solid var(--line)}
+      .produk-grid{grid-template-columns:1fr!important}
+      .kenapa-grid{grid-template-columns:1fr!important}
+      .tentang-grid{grid-template-columns:1fr!important}
+      .tentang-stats{border-top:none!important;padding-top:0!important;margin-top:1.6rem}
+      .form-grid{grid-template-columns:1fr!important}
+      .footer-grid{grid-template-columns:1fr!important}
+      .footer-contact{grid-template-columns:1fr!important}
+    }
+  </style>
+</helmet>
+
+<div style="background:var(--paper)">
+
+  <!-- NAV -->
+  <nav style="position:sticky;top:0;z-index:50;background:var(--paper);border-bottom:1px solid var(--line)">
+    <div class="wrap" style="display:flex;align-items:center;gap:2rem;padding-block:1rem;min-height:44px">
+      <div style="font-family:var(--f-d);font-weight:800;font-size:1.3rem;font-stretch:85%;color:var(--ink)">Re-Gain</div>
+      <div class="nav-links" style="display:flex;gap:1.7rem;margin-left:auto;align-items:center">
+        <a href="#cara-kerja" style="color:var(--ink-soft);font-size:.9rem">Cara kerja</a>
+        <a href="#bisnis" style="color:var(--ink-soft);font-size:.9rem">Untuk bisnis</a>
+        <a href="#produk" style="color:var(--ink-soft);font-size:.9rem">Produk</a>
+        <a href="#tentang" style="color:var(--ink-soft);font-size:.9rem">Tentang</a>
+      </div>
+      <a href="#kontak" class="btn btn-primary" style="padding:.6rem 1.3rem;font-size:.85rem">Hubungi kami</a>
+    </div>
+  </nav>
+
+  <!-- HERO: asymmetric, left-aligned, no filler illustration box -->
+  <header class="wrap" style="padding-block:clamp(64px,10vw,120px)">
+    <p class="label">Mustikajaya, Kota Bekasi</p>
+    <div class="hero-grid" style="display:grid;grid-template-columns:1.4fr 1fr;gap:clamp(24px,5vw,40px);align-items:end">
+      <h1 style="font-size:clamp(2.1rem,5.4vw,3.4rem);line-height:1.08;font-stretch:88%">Sisa makanan yang orang lain buang, kami jadikan sesuatu yang terpakai lagi</h1>
+      <div class="hero-stat" style="border-left:2px solid var(--gold);padding-left:1.3rem;padding-bottom:.2rem">
+        <p class="num" style="font-size:clamp(2.6rem,6vw,3.6rem);line-height:.85;font-stretch:65%">&lt;5km</p>
+        <p style="font-size:.85rem;color:var(--muted);margin-top:.4rem">radius jemput dan antar gratis dari Mustikajaya</p>
+      </div>
+    </div>
+    <p style="font-size:1.05rem;max-width:56ch;margin-top:1.6rem">Kami jemput sisa makanan dari mitra usaha dan warga di Bekasi, mengolahnya lewat larva BSF, lalu mengembalikannya sebagai produk yang benar-benar terpakai. Instinct Maggot adalah produk pertamanya.</p>
+    <div style="display:flex;gap:1rem;flex-wrap:wrap;margin-top:1.8rem">
+      <a href="#bisnis" class="btn btn-primary">Ajukan kerja sama</a>
+      <a href="#cara-kerja" class="btn btn-line">Lihat prosesnya</a>
+    </div>
+  </header>
+
+  <!-- CARA KERJA: real tapering mass-flow diagram, the signature visual -->
+  <section id="cara-kerja" style="background:var(--sand)">
+    <div class="wrap">
+      <h2 style="font-size:clamp(1.7rem,3.6vw,2.3rem);max-width:36ch;margin-bottom:.8rem">Sampah dapur hari ini, produk minggu depan</h2>
+      <p style="max-width:52ch;margin-bottom:clamp(32px,5vw,52px)">Tidak ada bahan yang dibeli dari pihak lain. Semua yang kami olah datang dari sisa makanan yang kami jemput sendiri.</p>
+
+      <figure style="margin:0">
+        <svg viewBox="0 0 900 260" role="img" style="width:100%;height:auto"
+             aria-label="Sisa makanan masuk dalam jumlah besar, diurai larva BSF, sebagian besar massanya menyusut menjadi produk kering, sisanya bercabang keluar sebagai kasgot">
+          <defs>
+            <linearGradient id="flowMain" gradientUnits="userSpaceOnUse" x1="40" y1="0" x2="860" y2="0">
+              <stop offset="0" stop-color="#3C4A2E"/>
+              <stop offset=".35" stop-color="#7A6A42"/>
+              <stop offset="1" stop-color="#C5A880"/>
+            </linearGradient>
+            <linearGradient id="flowSide" gradientUnits="userSpaceOnUse" x1="280" y1="0" x2="620" y2="0">
+              <stop offset="0" stop-color="#4C5A44"/>
+              <stop offset="1" stop-color="#8A9B84"/>
+            </linearGradient>
+          </defs>
+
+          <path fill="url(#flowMain)" d="M40,66 L282,66 C360,66 372,84 452,90 L790,108 L790,150 L452,150 C372,144 360,158 282,158 L40,158 Z"/>
+          <path fill="url(#flowSide)" d="M300,142 C300,178 320,206 366,212 L560,224 L560,244 L366,244 C306,236 280,204 280,158 Z"/>
+
+          <text x="40" y="42" style="font-family:'Bricolage Grotesque';font-weight:700;font-size:16px;fill:#10241A">Sisa makanan warga &amp; mitra usaha</text>
+          <text x="452" y="80" style="font-family:'Bricolage Grotesque';font-weight:700;font-size:16px;fill:#10241A">Diurai larva BSF</text>
+          <text x="802" y="122" style="font-family:'Bricolage Grotesque';font-weight:800;font-size:18px;fill:#10241A">Produk kering</text>
+          <text x="802" y="142" style="font-family:'Karla';font-size:12.5px;fill:#6B776E">siap kemas dan jual</text>
+          <text x="366" y="238" style="font-family:'Karla';font-size:13px;fill:#6B776E">bercabang jadi kasgot, pupuk untuk tanaman</text>
+        </svg>
+        <figcaption style="font-size:.82rem;color:var(--muted);margin-top:.6rem">Tebal aliran mengikuti massanya. Sisa makanan yang masuk jauh lebih banyak dari produk kering yang keluar.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- SPLIT: asymmetric, unequal weight, not two identical cards -->
+  <section style="padding-block:0">
+    <div class="split-wrap" style="display:grid;grid-template-columns:1.35fr 1fr">
+      <div class="wrap split-left" style="padding-block:clamp(48px,7vw,80px);border-right:1px solid var(--line)">
+        <p class="label">Untuk bisnis</p>
+        <h3 style="font-size:1.5rem;margin-bottom:.8rem;max-width:26ch">Serahkan sampah organik Anda, kami yang urus sisanya</h3>
+        <p style="max-width:44ch;margin-bottom:1.4rem">Untuk hotel, restoran, RT/RW, dan perumahan yang punya sisa makanan rutin di area Bekasi.</p>
+        <a href="#bisnis" class="btn btn-line">Ajukan kerja sama</a>
+      </div>
+      <div class="wrap" style="padding-block:clamp(48px,7vw,80px);background:var(--sand)">
+        <p class="label">Untuk konsumen</p>
+        <h3 style="font-size:1.5rem;margin-bottom:.8rem;max-width:22ch">Instinct Maggot untuk akuarium Anda</h3>
+        <p style="max-width:34ch;margin-bottom:1.4rem">Pakan alami dari larva BSF kering, untuk ikan hias dan predator.</p>
+        <a href="#produk" class="btn btn-line">Lihat produk</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- UNTUK BISNIS: real sequence, plain numbered list, no card chrome -->
+  <section id="bisnis">
+    <div class="wrap">
+      <h2 style="font-size:clamp(1.7rem,3.6vw,2.3rem);max-width:34ch;margin-bottom:clamp(32px,5vw,52px)">Tiga langkah menjadi mitra Re-Gain</h2>
+
+      <div style="display:flex;flex-direction:column">
+        <div style="display:grid;grid-template-columns:64px 1fr;gap:1.4rem;padding-block:1.6rem;border-top:1px solid var(--line)">
+          <span class="num" style="font-size:1.5rem">01</span>
+          <div>
+            <h4 style="font-size:1.08rem;margin-bottom:.35rem">Ajukan kerja sama</h4>
+            <p style="max-width:56ch">Hubungi tim kami lewat WhatsApp, ceritakan jenis usaha dan perkiraan volume sampah organik Anda.</p>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:64px 1fr;gap:1.4rem;padding-block:1.6rem;border-top:1px solid var(--line)">
+          <span class="num" style="font-size:1.5rem">02</span>
+          <div>
+            <h4 style="font-size:1.08rem;margin-bottom:.35rem">Sepakati akomodasi</h4>
+            <p style="max-width:56ch">Kami bicarakan jadwal dan cara pengiriman yang paling praktis untuk operasional Anda.</p>
+          </div>
+        </div>
+        <div style="display:grid;grid-template-columns:64px 1fr;gap:1.4rem;padding-block:1.6rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line)">
+          <span class="num" style="font-size:1.5rem">03</span>
+          <div>
+            <h4 style="font-size:1.08rem;margin-bottom:.35rem">Tentukan pengambilan</h4>
+            <p style="max-width:56ch">Anda antar sendiri, atau tim kami yang jemput langsung ke lokasi. Kesepakatan bisa dinegosiasikan ulang kapan saja.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem;margin-top:2rem">
+        <p style="color:var(--muted);font-size:.92rem">Cakupan layanan: se-Bekasi</p>
+        <a href="#kontak" class="btn btn-primary">Ajukan kerja sama sekarang</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUK: dark forest panel, organic diagonal edge, not a plain rectangle -->
+  <section id="produk" style="background:var(--forest);color:var(--cream);clip-path:polygon(0 3%, 100% 0, 100% 97%, 0 100%)">
+    <div class="wrap" style="padding-block:clamp(24px,4vw,40px)">
+      <p class="label" style="color:#8FA093">Produk pertama Re-Gain</p>
+      <div class="produk-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,5vw,56px);align-items:center">
+        <div>
+          <h2 style="color:var(--cream);font-size:clamp(1.8rem,3.6vw,2.3rem);margin-bottom:.7rem">Instinct Maggot</h2>
+          <p style="color:#B7C2B9;max-width:38ch;margin-bottom:1.4rem">Maggot BSF kering untuk ikan hias dan predator. Isi bersih 50 gram, dikemas dalam pouch berzipper dengan jendela transparan.</p>
+          <p class="num" style="color:var(--gold);font-size:clamp(2.4rem,4.6vw,3rem);font-stretch:65%;line-height:.9">Rp 12.000<span style="font-family:var(--f-b);font-size:.85rem;font-weight:400;color:#8FA093;font-stretch:100%"> / 50 gram</span></p>
+          <a href="#kontak" class="btn btn-primary" style="margin-top:1.3rem">Pesan produk ini</a>
+        </div>
+        <div style="border-top:1px solid rgba(237,230,218,.2)">
+          <div style="display:flex;justify-content:space-between;padding-block:.8rem;border-bottom:1px solid rgba(237,230,218,.15);font-size:.92rem"><span style="color:#8FA093">Bentuk</span><span>Maggot BSF kering</span></div>
+          <div style="display:flex;justify-content:space-between;padding-block:.8rem;border-bottom:1px solid rgba(237,230,218,.15);font-size:.92rem"><span style="color:#8FA093">Kemasan</span><span>Pouch zipper, jendela transparan</span></div>
+          <div style="display:flex;justify-content:space-between;padding-block:.8rem;border-bottom:1px solid rgba(237,230,218,.15);font-size:.92rem"><span style="color:#8FA093">Cocok untuk</span><span>Ikan hias &amp; predator</span></div>
+          <div style="display:flex;justify-content:space-between;padding-block:.8rem;font-size:.92rem"><span style="color:#8FA093">Penyimpanan</span><span>Kering, tanpa kulkas</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- KENAPA MAGGOT: editorial list, one point emphasized, not 4 identical cards -->
+  <section>
+    <div class="wrap">
+      <h2 style="font-size:clamp(1.7rem,3.6vw,2.3rem);max-width:30ch;margin-bottom:clamp(32px,5vw,52px)">Kenapa maggot, bukan pelet</h2>
+      <div class="kenapa-grid" style="display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(24px,4vw,40px)">
+        <div style="border-top:2px solid var(--ink);padding-top:1.2rem">
+          <p style="font-size:1.2rem;color:var(--ink);max-width:34ch;font-weight:500">Ikan merespons bentuk dan tekstur maggot jauh lebih agresif daripada pelet olahan. Ikan yang malas makan biasanya mau lagi.</p>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:1.2rem">
+          <div style="border-top:1px solid var(--line);padding-top:1rem">
+            <p style="font-size:.95rem"><span style="color:var(--ink);font-weight:700">Pakan alami. </span>Tanpa campuran, pewarna, atau bahan tambahan.</p>
+          </div>
+          <div style="border-top:1px solid var(--line);padding-top:1rem">
+            <p style="font-size:.95rem"><span style="color:var(--ink);font-weight:700">Tahan lama. </span>Kering, disimpan berminggu-minggu tanpa kulkas.</p>
+          </div>
+          <div style="border-top:1px solid var(--line);padding-top:1rem">
+            <p style="font-size:.95rem"><span style="color:var(--ink);font-weight:700">Lahir dari limbah. </span>Bukan dari kedelai atau jagung yang jadi bahan pangan.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JEMPUT SAMPAH KOMUNITAS: distinct ribbon callout, not a repeated card -->
+  <section style="background:var(--ink);color:var(--cream);padding-block:clamp(40px,6vw,64px)">
+    <div class="wrap" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1.6rem">
+      <div>
+        <p class="num" style="color:var(--cream);font-size:clamp(1.8rem,3.4vw,2.3rem);font-stretch:70%">Gratis untuk RT/RW dan perumahan</p>
+        <p style="color:#9AA79C;font-size:.92rem;margin-top:.4rem">Radius di bawah 5 km dari Mustikajaya, sisa makanan lingkungan Anda kami jemput langsung.</p>
+      </div>
+      <a href="#kontak" class="btn btn-line-cream" style="flex:none">Jadwalkan penjemputan</a>
+    </div>
+  </section>
+
+  <!-- TENTANG -->
+  <section id="tentang">
+    <div class="wrap tentang-grid" style="display:grid;grid-template-columns:1.3fr .9fr;gap:clamp(32px,5vw,56px)">
+      <div>
+        <p class="label">Tentang kami</p>
+        <h2 style="font-size:clamp(1.7rem,3.6vw,2.2rem);max-width:22ch;margin-bottom:1.1rem">Usaha kecil dari Mustikajaya, dibangun dari satu masalah nyata</h2>
+        <p style="max-width:56ch;margin-bottom:1rem">Sampah organik di sekitar kami terlalu banyak terbuang, sementara pembudidaya ikan hias kesulitan mencari pakan alami yang konsisten. Re-Gain lahir dari mempertemukan dua masalah itu.</p>
+        <p style="max-width:56ch">Kami tidak membeli bahan dari pihak lain lalu mengemasnya ulang. Kami menjemput, mengolah, dan mengemas sendiri, supaya kami tahu persis apa yang sampai ke tangan mitra dan pelanggan kami.</p>
+      </div>
+      <div class="tentang-stats" style="display:grid;grid-template-columns:1fr 1fr;gap:1.8rem;align-content:start;border-top:1px solid var(--line);padding-top:1.6rem">
+        <div><p class="num" style="font-size:1.8rem">1</p><p style="font-size:.82rem;color:var(--muted)">produk siap kirim</p></div>
+        <div><p class="num" style="font-size:1.8rem">&lt;5km</p><p style="font-size:.82rem;color:var(--muted)">radius gratis</p></div>
+        <div><p class="num" style="font-size:1.8rem">se-Bekasi</p><p style="font-size:.82rem;color:var(--muted)">cakupan kerja sama</p></div>
+        <div><p class="num" style="font-size:1.8rem">100%</p><p style="font-size:.82rem;color:var(--muted)">dari sisa makanan lokal</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ: hairline list, not bordered cards -->
+  <section style="background:var(--sand)">
+    <div class="wrap" style="max-width:760px">
+      <h2 style="font-size:clamp(1.6rem,3.4vw,2.1rem);margin-bottom:clamp(28px,4vw,44px)">Pertanyaan yang sering muncul</h2>
+      <div>
+        <div style="padding-block:1.3rem;border-top:1px solid var(--line)"><p style="font-weight:700;color:var(--ink)">Bagaimana cara mengajukan kerja sama bisnis?</p></div>
+        <div style="padding-block:1.3rem;border-top:1px solid var(--line)"><p style="font-weight:700;color:var(--ink)">Berapa minimal volume sampah untuk kerja sama?</p></div>
+        <div style="padding-block:1.3rem;border-top:1px solid var(--line)"><p style="font-weight:700;color:var(--ink)">Bagaimana cara memesan Instinct Maggot?</p></div>
+        <div style="padding-block:1.3rem;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><p style="font-weight:700;color:var(--ink)">Apakah ada kontrak atau komitmen jangka panjang?</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM -->
+  <section id="kontak">
+    <div class="wrap" style="max-width:680px">
+      <h2 style="font-size:clamp(1.6rem,3.4vw,2.1rem);margin-bottom:.6rem">Pesan produk atau ajukan kerja sama</h2>
+      <p style="margin-bottom:clamp(28px,4vw,40px)">Isi kolom di bawah, pesan Anda terbuka lewat WhatsApp ke kontak yang sesuai.</p>
+      <div style="border-top:2px solid var(--ink);padding-top:1.6rem;display:flex;flex-direction:column;gap:1.2rem">
+        <div class="form-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:1rem">
+          <div style="display:flex;flex-direction:column;gap:.4rem">
+            <label style="font-size:.85rem;font-weight:700;color:var(--ink)">Nama</label>
+            <div style="border-bottom:1px solid var(--line);padding:.6rem 0;font-size:.9rem;color:var(--muted)">Nama Anda</div>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:.4rem">
+            <label style="font-size:.85rem;font-weight:700;color:var(--ink)">Nomor WhatsApp</label>
+            <div style="border-bottom:1px solid var(--line);padding:.6rem 0;font-size:.9rem;color:var(--muted)">0812xxxxxxxx</div>
+          </div>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:.4rem">
+          <label style="font-size:.85rem;font-weight:700;color:var(--ink)">Keperluan</label>
+          <div style="border-bottom:1px solid var(--line);padding:.6rem 0;font-size:.9rem;color:var(--muted);display:flex;justify-content:space-between">
+            <span>Pesan Instinct Maggot atau ajukan kerja sama bisnis</span>
+            <span>▾</span>
+          </div>
+        </div>
+        <a href="#" class="btn btn-primary" style="align-self:flex-start;margin-top:.6rem">Kirim ke WhatsApp</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer style="background:var(--forest);color:var(--cream)">
+    <div class="wrap footer-grid" style="padding-block:clamp(48px,6vw,72px);display:grid;grid-template-columns:1.2fr 1fr;gap:clamp(28px,5vw,48px)">
+      <div>
+        <div style="font-family:var(--f-d);font-weight:800;font-size:1.3rem;font-stretch:85%;color:var(--cream);margin-bottom:.9rem">Re-Gain</div>
+        <p style="color:#9AA79C;font-size:.92rem;max-width:38ch">Bisnis circular economy di Mustikajaya, Kota Bekasi. Mengolah sampah organik menjadi produk yang terpakai lagi.</p>
+      </div>
+      <div class="footer-contact" style="display:grid;grid-template-columns:1fr 1fr;gap:1.4rem">
+        <div>
+          <p style="font-size:.8rem;color:#8FA093;margin-bottom:.2rem">WhatsApp, pesanan produk</p>
+          <p style="font-weight:700">0852-8952-1862</p>
+        </div>
+        <div>
+          <p style="font-size:.8rem;color:#8FA093;margin-bottom:.2rem">WhatsApp, kerja sama bisnis</p>
+          <p style="font-weight:700">0813-8448-1108</p>
+        </div>
+        <div>
+          <p style="font-size:.8rem;color:#8FA093;margin-bottom:.2rem">Email</p>
+          <p style="font-weight:700">maggotinstinct@gmail.com</p>
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(237,230,218,.15)">
+      <div class="wrap" style="padding-block:1.1rem;display:flex;justify-content:space-between;flex-wrap:wrap;gap:.5rem">
+        <small style="color:#8FA093;font-size:.8rem">Re-Gain, Mustikajaya, Kota Bekasi</small>
+        <small style="color:#8FA093;font-size:.8rem">Sejak sisa makanan warga</small>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</x-dc>
+</body>
+</html>
