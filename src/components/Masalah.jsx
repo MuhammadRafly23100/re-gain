@@ -39,7 +39,7 @@ export default function Masalah() {
           Sisa makanan yang sampai ke TPA tidak berhenti jadi sampah. Justru jadi masalah baru.
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-10 md:gap-16 border-t border-cream/20 pt-8">
+        <div className="grid sm:grid-cols-2 gap-10 md:gap-16 border-t border-cream/20 pt-8">
           <div>
             <div className="grid grid-cols-2 gap-6 mb-3">
               <div>
@@ -78,8 +78,8 @@ export default function Masalah() {
                     i === AKIBAT.length - 1 ? 'border-b' : ''
                   }`}
                 >
-                  <h3 className="text-cream text-[0.95rem] leading-snug">{judul}</h3>
-                  <p className="text-[#B7C2B9] text-[0.95rem]">{isi}</p>
+                  <h3 className="text-cream text-lg leading-snug">{judul}</h3>
+                  <p className="text-[#B7C2B9]">{isi}</p>
                 </div>
               ))}
             </div>
