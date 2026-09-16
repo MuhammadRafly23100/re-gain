@@ -1,7 +1,7 @@
 /*
  * Rantai kemitraan, mengikuti business model di company profile.
  *
- * Empat peran: penghasil sampah, mitra pengumpul, Regain sebagai pengolah,
+ * Empat peran: penghasil sampah, mitra pengumpul, REGAIN sebagai pengolah,
  * dan pengguna hilir. Penghasil bisa menyerahkan langsung, atau lewat mitra
  * pengumpul, jadi percabangannya dipertahankan karena itu memang dua jalur
  * yang berbeda di lapangan.
@@ -57,7 +57,7 @@ export default function RantaiKemitraan() {
           viewBox="0 0 900 270"
           className="w-full h-auto min-w-[720px] md:min-w-0"
           role="img"
-          aria-label="Rantai kemitraan Regain. Penghasil sampah sisa makanan menyerahkan langsung ke Regain, atau lewat mitra pengumpul yang mengumpulkan, memilah awal, dan mengangkut. Regain mengolah dan mengkonversinya secara biologis, lalu hasilnya dipakai oleh pengguna hilir."
+          aria-label="Rantai kemitraan REGAIN. Penghasil sampah sisa makanan menyerahkan langsung ke REGAIN, atau lewat mitra pengumpul yang mengumpulkan, memilah awal, dan mengangkut. REGAIN mengolah dan mengkonversinya secara biologis, lalu hasilnya dipakai oleh pengguna hilir."
         >
           <defs>
             <marker id="rkPanah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -71,7 +71,7 @@ export default function RantaiKemitraan() {
             <line x1="226" y1="83" x2="226" y2="185" />
             <line x1="226" y1="185" x2="246" y2="185" markerEnd="url(#rkPanah)" />
 
-            {/* jalur langsung ke Regain */}
+            {/* jalur langsung ke REGAIN */}
             <path d="M226,83 L470,83 L470,134 L506,134" markerEnd="url(#rkPanah)" />
 
             {/* jalur lewat mitra pengumpul, bertemu di titik yang sama */}
@@ -85,7 +85,7 @@ export default function RantaiKemitraan() {
           <Ket x={20} y={126} baris={['restoran, katering,', 'usaha makanan, institusi']} />
 
           <Node x={250} y={162} w={176} label="Mitra pengumpul" />
-          <Ket x={250} y={228} baris={['mengumpulkan, memilah awal,', 'mengangkut ke Regain']} />
+          <Ket x={250} y={228} baris={['mengumpulkan, memilah awal,', 'mengangkut ke REGAIN']} />
 
           <Node x={510} y={111} w={150} label="REGAIN" isi />
           <Ket x={510} y={177} baris={['pengolahan dan', 'konversi biologis']} />

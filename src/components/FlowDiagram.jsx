@@ -40,7 +40,7 @@ const TAHAP = [
     judul: 'Konversi biologis',
     hit: { x: X.urai, y: 60, w: X.panen - X.urai, h: 140 },
     detail:
-      'Sisa makanan diurai secara biologis. Metode yang dipakai saat ini adalah bioconversion Black Soldier Fly. Di titik ini aliran terbelah jadi dua keluaran.',
+      'Sisa makanan diurai secara biologis. Metode yang dipakai saat ini memakai larva Black Soldier Fly (BSF). Di titik ini aliran terbelah jadi dua keluaran.',
     ukur: 'BSF',
     ukurLabel: 'metode yang dipakai saat ini',
   },
@@ -50,7 +50,7 @@ const TAHAP = [
     judul: 'Pemulihan',
     hit: { x: X.panen, y: 60, w: X.akhir - X.panen, h: 140 },
     detail:
-      'Biomassa hasil konversi dipanen dan dikeringkan sampai kadar airnya hilang. Di sinilah massanya menyusut paling banyak, dan nilainya jadi terkonsentrasi.',
+      'Maggot Kering hasil konversi dipanen dan dikeringkan sampai kadar airnya hilang. Di sinilah massanya menyusut paling banyak, dan nilainya jadi terkonsentrasi.',
     ukur: 'Kering',
     ukurLabel: 'stabil, bisa disimpan lama',
   },
@@ -125,7 +125,7 @@ export default function FlowDiagram() {
         viewBox="0 0 900 270"
         className="w-full h-auto min-w-[660px] md:min-w-0"
         role="img"
-        aria-label="Neraca massa pemulihan Regain. Sisa makanan masuk dalam jumlah penuh, dikonversi secara biologis, lalu dipulihkan dan dikeringkan sehingga massanya menyusut jauh menjadi protein kering. Di titik konversi, sebagian aliran bercabang keluar sebagai kasgot."
+        aria-label="Neraca massa pemulihan REGAIN. Sisa makanan masuk dalam jumlah penuh, dikonversi secara biologis, lalu dipulihkan dan dikeringkan sehingga massanya menyusut jauh menjadi protein kering. Di titik konversi, sebagian aliran bercabang keluar sebagai kasgot."
       >
         {/* Rel ukur. Menandai batas tiap tahap, bukan hiasan. */}
         <g stroke="#C5A880" strokeWidth="1" data-ukur>

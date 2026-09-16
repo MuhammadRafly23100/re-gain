@@ -1,7 +1,7 @@
 import { STATISTIK_MASALAH } from '../config'
 
 /*
- * Pernyataan masalah, sebelum penjelasan apa yang Regain lakukan.
+ * Pernyataan masalah, sebelum penjelasan apa yang REGAIN lakukan.
  *
  * Sengaja berlatar gelap: ini keadaan "sebelum", dan section sesudahnya yang
  * lebih terang adalah jalan keluarnya. Nilai gelap-terang dipakai untuk
@@ -36,7 +36,7 @@ export default function Masalah() {
     <section id="masalah" className="bg-forest text-cream py-16 md:py-24">
       <div className="wrap">
         <h2 className="text-cream text-[clamp(1.7rem,3.6vw,2.4rem)] max-w-[26ch] mb-10 md:mb-14">
-          Sisa makanan yang sampai ke TPA tidak berhenti jadi sampah. Ia jadi masalah baru.
+          Sisa makanan yang sampai ke TPA tidak berhenti jadi sampah. Justru jadi masalah baru.
         </h2>
 
         <div className="grid sm:grid-cols-2 gap-8 md:gap-14 border-t border-cream/20 pt-8 mb-3">
@@ -61,16 +61,16 @@ export default function Masalah() {
         </p>
 
         <p className="text-[#B7C2B9] max-w-[58ch] mb-10 md:mb-14">
-          Sebagian besar dari sampah yang belum terkelola itu berakhir di TPA begitu saja. Membuang sisa makanan
-          bukan sekadar memindahkan barang tak terpakai. Ada tiga hal yang terjadi setelahnya, dan ketiganya bisa
-          dihindari selama sisa makanan itu masih bisa dialihkan sebelum sampai ke sana.
+          Sebagian besar sampah yang belum terkelola itu berakhir di TPA begitu saja. Membuang sisa makanan
+          bukan sekadar memindahkan barang tak terpakai. Ada tiga hal yang terjadi sesudahnya, dan ketiganya
+          masih bisa dicegah selama sisa makanan itu dialihkan sebelum sampai ke sana.
         </p>
 
         <div className="flex flex-col">
           {AKIBAT.map(([judul, isi], i) => (
             <div
               key={judul}
-              className={`grid gap-2 md:grid-cols-[minmax(0,22ch)_1fr] md:gap-12 py-6 border-t border-cream/20 ${
+              className={`grid gap-2 sm:grid-cols-2 sm:gap-8 md:gap-14 py-6 border-t border-cream/20 ${
                 i === AKIBAT.length - 1 ? 'border-b' : ''
               }`}
             >

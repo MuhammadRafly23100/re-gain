@@ -101,7 +101,7 @@ export default function KontakForm() {
 
     const baris = isKerjasama
       ? [
-          'Halo Regain, saya ingin mengajukan kemitraan.',
+          'Halo REGAIN, saya ingin mengajukan kemitraan.',
           '',
           `Peran     : ${pilihan.label}`,
           `Organisasi: ${form.namaEntitas.trim()}`,

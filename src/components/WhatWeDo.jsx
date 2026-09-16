@@ -9,7 +9,7 @@ gsap.registerPlugin(ScrollTrigger, useGSAP)
  * Intervensi jalur TPA.
  *
  * Ini gagasan utama perusahaan, bukan sekadar salah satu section: tanpa
- * intervensi, sisa makanan berakhir di TPA. Regain memotong jalur itu dan
+ * intervensi, sisa makanan berakhir di TPA. REGAIN memotong jalur itu dan
  * mengalihkannya ke pemulihan nilai.
  *
  * Karena itu jalur TPA tetap digambar, tidak dihilangkan. Menghapusnya
@@ -68,9 +68,9 @@ export default function WhatWeDo() {
           Kami memotong jalur sisa makanan ke TPA
         </h2>
         <p className="max-w-[58ch] mb-8 md:mb-12">
-          Regain menerima sampah sisa makanan yang layak olah, lalu memprosesnya lewat konversi biologis untuk
-          memulihkan nilai yang masih tersisa di dalamnya. Yang tadinya berakhir di tempat pembuangan akhir,
-          dialihkan jadi sumber daya yang terpakai lagi.
+          REGAIN menerima sampah sisa makanan yang layak olah, lalu memprosesnya lewat konversi biologis.
+          Yang tadinya tinggal menunggu diangkut ke tempat pemrosesan akhir, kami alihkan jadi sumber daya
+          yang terpakai lagi.
         </p>
 
         <div className="overflow-x-auto -mx-5 px-5 md:mx-0 md:px-0">
@@ -78,7 +78,7 @@ export default function WhatWeDo() {
             viewBox="0 0 900 300"
             className="w-full h-auto min-w-[700px] md:min-w-0"
             role="img"
-            aria-label="Tanpa intervensi, sisa makanan berakhir di TPA. Regain memotong jalur itu dan mengalihkannya melalui konversi biologis menjadi output organik yang dipakai kembali."
+            aria-label="Tanpa intervensi, sisa makanan berakhir di TPA. REGAIN memotong jalur itu dan mengalihkannya melalui konversi biologis menjadi output organik yang dipakai kembali."
           >
             <defs>
               <marker id="wwdPanah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
@@ -102,20 +102,20 @@ export default function WhatWeDo() {
               <line x1="408" y1="62" x2="664" y2="62" markerEnd="url(#wwdPanahMati)" opacity="0.45" />
             </g>
 
-            {/* palang: titik tempat Regain memotong jalur itu */}
+            {/* palang: titik tempat REGAIN memotong jalur itu */}
             <g data-palang>
               <rect x="394" y="36" width="6" height="52" fill="#C48B50" />
               <rect x="394" y="36" width="6" height="52" fill="#C48B50" opacity="0.25" transform="translate(8,0)" />
             </g>
             <text x="360" y="108" style={{ fontFamily: 'Bricolage Grotesque, sans-serif', fontWeight: 700, fontSize: 12.5, fill: '#8A5A2D' }}>
-              Regain memotong di sini
+              REGAIN memotong di sini
             </text>
 
             <text x="232" y="42" style={{ fontFamily: 'Karla, sans-serif', fontSize: 12, fill: '#8A938A' }}>
               tanpa intervensi
             </text>
             <text x="232" y="272" style={{ fontFamily: 'Karla, sans-serif', fontSize: 12, fill: '#6B776E' }}>
-              jalur Regain
+              jalur REGAIN
             </text>
 
             {/* rantai pemulihan */}
@@ -133,8 +133,8 @@ export default function WhatWeDo() {
         </div>
 
         <p className="mt-5 text-sm text-muted max-w-[68ch]">
-          Konversi biologis yang kami pakai saat ini adalah bioconversion Black Soldier Fly. Itu teknologi yang
-          sedang dipakai, bukan batas dari apa yang kami olah.
+          Konversi biologis yang kami pakai saat ini memakai larva Black Soldier Fly (BSF). Itu metode yang
+          sedang berjalan, bukan batas dari apa yang bisa kami olah.
         </p>
       </div>
     </section>

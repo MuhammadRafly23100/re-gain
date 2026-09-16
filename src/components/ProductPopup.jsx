@@ -37,7 +37,7 @@ export default function ProductPopup({ item, onClose }) {
 
   function pesan() {
     bukaWhatsApp(WA_PESANAN, [
-      'Halo Regain, saya mau tanya/pesan produk ini.',
+      'Halo REGAIN, saya mau tanya/pesan produk ini.',
       '',
       `Produk : ${item.nama}${item.berat ? ` (${item.berat})` : ''}`,
     ])

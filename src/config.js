@@ -5,18 +5,18 @@ export const PERUSAHAAN = {
   nama: 'REGAIN',
   tagline: 'Waste has more to give',
   ringkas:
-    'Perusahaan pengolah sampah sisa makanan. Kami mengalihkan sisa makanan dari TPA dan memulihkan nilainya lewat konversi biologis.',
-  visi: 'Dunia di mana sampah sisa makanan tetap menghasilkan nilai.',
+    'Perusahaan pengolah sampah sisa makanan di Kota Bekasi. Kami menahan sisa makanan supaya tidak berakhir di tempat pemrosesan akhir, lalu mengolahnya lewat konversi biologis jadi sumber daya yang terpakai lagi.',
+  visi: 'Sisa makanan berhenti jadi beban, dan kembali jadi sesuatu yang berguna.',
   misi:
-    'Mengalihkan sampah sisa makanan dari TPA dengan memulihkan sisa nilainya melalui konversi yang praktis dan efisien.',
+    'Menahan sisa makanan agar tidak berakhir di tempat pemrosesan akhir, lalu memulihkan nilainya lewat konversi yang praktis dan bisa diandalkan.',
   alamat: 'Jl. Rw. Mulya No.19, RT.003/RW.002, Mustikajaya, Kota Bekasi, Jawa Barat 17158',
 }
 
 export const PRINSIP = [
-  ['Circularity', 'Sampah sisa makanan seharusnya dialihkan kembali ke penggunaan produktif.'],
-  ['Practicality', 'Pemulihan nilai harus masuk akal di kondisi operasional nyata.'],
-  ['Reliability', 'Pengolahan yang konsisten adalah syarat penanganan sampah yang bertanggung jawab.'],
-  ['Continuous improvement', 'Konversi harus jadi makin efisien dan efektif dari waktu ke waktu.'],
+  ['Circularity', 'Sisa makanan harusnya kembali terpakai, bukan berhenti sebagai sampah.'],
+  ['Practicality', 'Cara kerjanya harus masuk akal dipakai di lapangan, bukan cuma bagus di atas kertas.'],
+  ['Reliability', 'Pengolahan harus jalan terus dan bisa diandalkan, karena sampah tidak bisa menunggu.'],
+  ['Continuous improvement', 'Prosesnya terus kami perbaiki supaya makin efisien dari waktu ke waktu.'],
 ]
 
 // Diverifikasi langsung di dashboard SIPSN sebelum dipakai (lihat catatan di
@@ -33,7 +33,7 @@ export const KAPASITAS = {
   lokasi: 'Bekasi',
   sekarangKgHari: 36,
   potensiKgHari: 576,
-  teknologi: 'Black Soldier Fly (BSF) bioconversion',
+  teknologi: 'Konversi biologis Black Soldier Fly (BSF)',
 }
 
 

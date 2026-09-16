@@ -16,8 +16,8 @@ export default function Capability() {
         <p className="text-sm text-muted mb-3">Capability &amp; technology</p>
         <h2 className="text-[clamp(1.7rem,3.6vw,2.3rem)] max-w-[32ch] mb-3">Kapabilitas dan teknologi</h2>
         <p className="max-w-[58ch] mb-10 md:mb-14">
-          Regain menggabungkan kemampuan pengolahan sampah sisa makanan dengan teknologi konversi biologis
-          untuk memulihkan sumber daya yang masih terkandung di dalamnya.
+          REGAIN mengolah sampah sisa makanan dengan konversi biologis, supaya isinya yang masih bernilai
+          bisa diambil kembali dan dipakai lagi.
         </p>
 
         <div className="grid gap-10 md:gap-14 md:grid-cols-[1fr_1fr]">
@@ -45,8 +45,8 @@ export default function Capability() {
             </div>
 
             <p className="text-sm mt-5 max-w-[52ch]">
-              BSF dipakai karena satu masukan sampah bisa dikonversi jadi beberapa output yang terpakai
-              sekaligus, di dalam satu sistem yang berputar.
+              BSF kami pakai karena satu kali masukan sampah bisa menghasilkan beberapa output sekaligus,
+              dalam satu sistem yang berputar.
             </p>
           </div>
 
@@ -60,8 +60,8 @@ export default function Capability() {
 
             <h3 className="text-sm font-bold text-ink mt-10 mb-3 border-t border-line pt-6">Arah pengembangan</h3>
             <p className="max-w-[52ch]">
-              Kami sedang mengembangkan kemampuan konversi biologis dan biokimia, untuk meningkatkan kecepatan
-              proses, efisiensi, pemanfaatan sumber daya, dan nilai dari output yang dipulihkan.
+              Kami sedang mengembangkan kemampuan konversi biologis dan biokimia, supaya prosesnya lebih
+              cepat, lebih hemat, dan output yang dipulihkan makin bernilai.
             </p>
           </div>
         </div>

@@ -41,7 +41,7 @@ const dataTerstruktur = [
       'pengolahan sampah sisa makanan',
       'food waste processing',
       'konversi biologis',
-      'black soldier fly bioconversion',
+      'konversi biologis black soldier fly',
       'circular economy',
     ],
   },
@@ -50,7 +50,7 @@ const dataTerstruktur = [
     '@type': 'Product',
     name: `${PRODUK.nama} ${PRODUK.berat}`,
     description:
-      'Protein kering hasil pemulihan sampah sisa makanan, untuk pakan ikan hias dan predator. Salah satu output Regain.',
+      'Protein kering hasil pemulihan sampah sisa makanan, untuk pakan ikan hias dan predator. Salah satu output REGAIN.',
     image: [`${DOMAIN}/img/produk.webp`, `${DOMAIN}/img/kemasan.webp`],
     brand: { '@type': 'Brand', name: 'Instinct' },
     category: 'Pakan ikan',

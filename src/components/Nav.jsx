@@ -25,7 +25,7 @@ export default function Nav() {
           className="font-display font-extrabold text-xl text-ink no-underline"
           style={{ fontStretch: '85%' }}
         >
-          Re-Gain
+          REGAIN
         </a>
 
         <div className="hidden md:flex gap-7 ml-auto items-center">

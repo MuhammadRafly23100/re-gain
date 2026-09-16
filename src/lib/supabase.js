@@ -9,7 +9,7 @@ export const supabase = url && anonKey ? createClient(url, anonKey) : null
 
 /**
  * Simpan satu baris, tidak pernah melempar error ke pemanggil.
- * Kegagalan di sini tidak boleh menghalangi pengguna menghubungi Re-Gain.
+ * Kegagalan di sini tidak boleh menghalangi pengguna menghubungi REGAIN.
  */
 export async function simpanLead(tabel, data) {
   if (!supabase) return { ok: false, reason: 'not-configured' }

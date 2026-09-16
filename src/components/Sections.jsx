@@ -26,8 +26,8 @@ export function Kemitraan() {
         <p className="text-sm text-muted mb-3">Business &amp; partnership model</p>
         <h2 className="text-[clamp(1.7rem,3.6vw,2.3rem)] max-w-[32ch] mb-3">Model bisnis dan kemitraan</h2>
         <p className="max-w-[58ch] mb-8 md:mb-12">
-          Regain bekerja dengan mitra di sepanjang rantai sampah sisa makanan, supaya sisa makanan bisa
-          dikumpulkan, diolah, dan dikonversi jadi sumber daya yang terpakai.
+          REGAIN bekerja bersama mitra di sepanjang rantai sampah sisa makanan, mulai dari yang
+          menghasilkan, yang mengumpulkan, sampai yang memakai hasil olahannya.
         </p>
 
         <RantaiKemitraan />
@@ -80,6 +80,12 @@ export function Tentang() {
           </div>
         </div>
 
+        <h3 className="text-lg mb-2">Prinsip yang kami pegang</h3>
+        <p className="max-w-[58ch] mb-6 text-inksoft">
+          Empat hal ini yang kami pakai sebagai pegangan waktu mengambil keputusan, dari cara mengolah sampai
+          cara melayani mitra.
+        </p>
+
         <div className="grid gap-x-12 gap-y-6 md:grid-cols-2">
           {PRINSIP.map(([nama, isi]) => (
             <div key={nama} className="border-t border-line pt-4">
@@ -102,7 +108,7 @@ export function Tentang() {
           </div>
           <div>
             <p className="num text-3xl">2</p>
-            <p className="text-xs text-muted mt-1">output dipulihkan saat ini</p>
+            <p className="text-xs text-muted mt-1">output dipulihkan saat ini: protein kering dan kasgot</p>
           </div>
           <div>
             <p className="num text-3xl">Bekasi</p>
@@ -116,8 +122,8 @@ export function Tentang() {
 
 export const FAQ_ITEM = [
   {
-    t: 'Sampah seperti apa yang bisa Regain terima?',
-    j: 'Sisa makanan matang, nasi, mi, roti, buah, sayur, dan sisa persiapan dapur. Yang belum bisa kami terima: tulang berlebih, material keras, minyak, dan cairan berlebih.',
+    t: 'Sampah seperti apa yang bisa REGAIN terima?',
+    j: 'Sampah sisa makanan organik dari dapur rumah tangga, restoran, katering, dan industri makanan. Material non-organik kami pisahkan dulu sebelum masuk proses konversi biologis. Kalau ragu dengan jenis sampah di tempat Anda, ceritakan saja lebih dulu, nanti kami bantu cek.',
   },
   {
     t: 'Bagaimana cara mengajukan kemitraan?',
@@ -133,10 +139,10 @@ export const FAQ_ITEM = [
   },
   {
     t: 'Apa saja yang dihasilkan dari pengolahannya?',
-    j: 'Saat ini dua keluaran: protein kering untuk pakan ternak dan ikan, serta kasgot sebagai pembenah tanah. Arah pengembangan kami adalah menambah nilai dan ragam output yang bisa dipulihkan.',
+    j: 'Saat ini ada dua: protein kering untuk pakan ikan dan ternak, serta kasgot sebagai pembenah tanah. Ke depan kami ingin menambah ragam output yang bisa dipulihkan.',
   },
   {
-    t: 'Apakah Regain melayani RT/RW dan perumahan?',
+    t: 'Apakah REGAIN melayani RT/RW dan perumahan?',
     j: `Ya. Untuk lingkungan warga di radius di bawah ${RADIUS_GRATIS_KM} km dari Mustikajaya, penjemputan tidak dikenakan biaya.`,
   },
 ]
