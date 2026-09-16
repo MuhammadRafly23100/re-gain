@@ -35,13 +35,11 @@ export default function Masalah() {
   return (
     <section id="masalah" className="bg-forest text-cream py-16 md:py-24">
       <div className="wrap">
-        <div className="grid sm:grid-cols-2 gap-10 md:gap-16 border-t border-cream/20 pt-8">
-          <div>
-            <h2 className="text-cream text-[clamp(1.5rem,2.6vw,2rem)] max-w-[22ch]">
-              Sisa makanan yang sampai ke TPA tidak berhenti jadi sampah. Justru jadi masalah baru.
-            </h2>
-          </div>
+        <h2 className="text-cream text-[clamp(1.7rem,3.6vw,2.4rem)] max-w-[26ch] mb-10 md:mb-14">
+          Sisa makanan yang sampai ke TPA tidak berhenti jadi sampah. Justru jadi masalah baru.
+        </h2>
 
+        <div className="grid sm:grid-cols-2 gap-10 md:gap-16 border-t border-cream/20 pt-8">
           <div>
             <div className="grid grid-cols-2 gap-6 mb-3">
               <div>
@@ -57,13 +55,15 @@ export default function Masalah() {
                 <p className="text-[#B7C2B9] mt-3 max-w-[30ch]">dari sampah nasional adalah sisa makanan, komposisi terbesar dari semua jenis sampah</p>
               </div>
             </div>
-            <p className="text-xs text-[#8FA093] mb-8">
+            <p className="text-xs text-[#8FA093]">
               Sumber:{' '}
               <a href={STATISTIK_MASALAH.sumberUrl} target="_blank" rel="noopener" className="text-[#8FA093] underline hover:text-cream">
                 {STATISTIK_MASALAH.sumber}
               </a>
             </p>
+          </div>
 
+          <div>
             <p className="text-[#B7C2B9] max-w-[58ch] mb-8">
               Sebagian besar sampah yang belum terkelola itu berakhir di TPA begitu saja. Membuang sisa makanan
               bukan sekadar memindahkan barang tak terpakai. Ada tiga hal yang terjadi sesudahnya, dan ketiganya
