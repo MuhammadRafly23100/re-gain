@@ -35,12 +35,12 @@ export default function Masalah() {
   return (
     <section id="masalah" className="bg-forest text-cream py-16 md:py-24">
       <div className="wrap">
-        <h2 className="text-cream text-[clamp(1.7rem,3.6vw,2.4rem)] max-w-[26ch] mb-10 md:mb-14">
-          Sisa makanan yang sampai ke TPA tidak berhenti jadi sampah. Justru jadi masalah baru.
-        </h2>
-
         <div className="grid sm:grid-cols-2 gap-10 md:gap-16 border-t border-cream/20 pt-8">
           <div>
+            <h2 className="text-cream text-[clamp(1.6rem,3vw,2.1rem)] max-w-[22ch] mb-10 md:mb-14">
+              Sisa makanan yang sampai ke TPA tidak berhenti jadi sampah. Justru jadi masalah baru.
+            </h2>
+
             <div className="grid grid-cols-2 gap-6 mb-3">
               <div>
                 <p className="num text-cream text-[clamp(2.6rem,5.4vw,3.6rem)] leading-none" style={{ fontStretch: '65%' }}>
