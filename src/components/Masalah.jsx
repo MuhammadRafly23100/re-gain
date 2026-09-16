@@ -39,45 +39,51 @@ export default function Masalah() {
           Sisa makanan yang sampai ke TPA tidak berhenti jadi sampah. Justru jadi masalah baru.
         </h2>
 
-        <div className="grid sm:grid-cols-2 gap-8 md:gap-14 border-t border-cream/20 pt-8 mb-3">
+        <div className="grid md:grid-cols-2 gap-10 md:gap-16 border-t border-cream/20 pt-8">
           <div>
-            <p className="num text-cream text-[clamp(2.6rem,5.4vw,3.6rem)] leading-none" style={{ fontStretch: '65%' }}>
-              {STATISTIK_MASALAH.belumTerkelola}
-            </p>
-            <p className="text-[#B7C2B9] mt-3 max-w-[30ch]">sampah yang timbul di Indonesia belum terkelola</p>
-          </div>
-          <div>
-            <p className="num text-cream text-[clamp(2.6rem,5.4vw,3.6rem)] leading-none" style={{ fontStretch: '65%' }}>
-              {STATISTIK_MASALAH.sisaMakananPersen}
-            </p>
-            <p className="text-[#B7C2B9] mt-3 max-w-[30ch]">dari sampah nasional adalah sisa makanan, komposisi terbesar dari semua jenis sampah</p>
-          </div>
-        </div>
-        <p className="text-xs text-[#8FA093] mb-10 md:mb-14">
-          Sumber:{' '}
-          <a href={STATISTIK_MASALAH.sumberUrl} target="_blank" rel="noopener" className="text-[#8FA093] underline hover:text-cream">
-            {STATISTIK_MASALAH.sumber}
-          </a>
-        </p>
-
-        <p className="text-[#B7C2B9] max-w-[58ch] mb-10 md:mb-14">
-          Sebagian besar sampah yang belum terkelola itu berakhir di TPA begitu saja. Membuang sisa makanan
-          bukan sekadar memindahkan barang tak terpakai. Ada tiga hal yang terjadi sesudahnya, dan ketiganya
-          masih bisa dicegah selama sisa makanan itu dialihkan sebelum sampai ke sana.
-        </p>
-
-        <div className="flex flex-col">
-          {AKIBAT.map(([judul, isi], i) => (
-            <div
-              key={judul}
-              className={`grid gap-2 sm:grid-cols-2 sm:gap-8 md:gap-14 py-6 border-t border-cream/20 ${
-                i === AKIBAT.length - 1 ? 'border-b' : ''
-              }`}
-            >
-              <h3 className="text-cream text-lg leading-snug">{judul}</h3>
-              <p className="text-[#B7C2B9] max-w-[58ch]">{isi}</p>
+            <div className="grid grid-cols-2 gap-6 mb-3">
+              <div>
+                <p className="num text-cream text-[clamp(2.6rem,5.4vw,3.6rem)] leading-none" style={{ fontStretch: '65%' }}>
+                  {STATISTIK_MASALAH.belumTerkelola}
+                </p>
+                <p className="text-[#B7C2B9] mt-3 max-w-[30ch]">sampah yang timbul di Indonesia belum terkelola</p>
+              </div>
+              <div>
+                <p className="num text-cream text-[clamp(2.6rem,5.4vw,3.6rem)] leading-none" style={{ fontStretch: '65%' }}>
+                  {STATISTIK_MASALAH.sisaMakananPersen}
+                </p>
+                <p className="text-[#B7C2B9] mt-3 max-w-[30ch]">dari sampah nasional adalah sisa makanan, komposisi terbesar dari semua jenis sampah</p>
+              </div>
             </div>
-          ))}
+            <p className="text-xs text-[#8FA093]">
+              Sumber:{' '}
+              <a href={STATISTIK_MASALAH.sumberUrl} target="_blank" rel="noopener" className="text-[#8FA093] underline hover:text-cream">
+                {STATISTIK_MASALAH.sumber}
+              </a>
+            </p>
+          </div>
+
+          <div>
+            <p className="text-[#B7C2B9] max-w-[58ch] mb-8">
+              Sebagian besar sampah yang belum terkelola itu berakhir di TPA begitu saja. Membuang sisa makanan
+              bukan sekadar memindahkan barang tak terpakai. Ada tiga hal yang terjadi sesudahnya, dan ketiganya
+              masih bisa dicegah selama sisa makanan itu dialihkan sebelum sampai ke sana.
+            </p>
+
+            <div className="flex flex-col">
+              {AKIBAT.map(([judul, isi], i) => (
+                <div
+                  key={judul}
+                  className={`grid gap-2 sm:grid-cols-[minmax(0,15ch)_1fr] sm:gap-5 py-5 border-t border-cream/20 ${
+                    i === AKIBAT.length - 1 ? 'border-b' : ''
+                  }`}
+                >
+                  <h3 className="text-cream text-[0.95rem] leading-snug">{judul}</h3>
+                  <p className="text-[#B7C2B9] text-[0.95rem]">{isi}</p>
+                </div>
+              ))}
+            </div>
+          </div>
         </div>
       </div>
     </section>
